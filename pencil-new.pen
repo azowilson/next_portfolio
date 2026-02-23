@@ -1,0 +1,609 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "WNe1N",
+      "x": 100,
+      "y": 100,
+      "name": "Portfolio Homepage",
+      "width": 1200,
+      "fill": "#F2F2F2",
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "#0D0D0D"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "4ur3R",
+          "name": "Hero",
+          "width": "fill_container",
+          "height": 320,
+          "fill": "#fffae7ff",
+          "stroke": {
+            "align": "outside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#0D0D0D"
+          },
+          "effect": {
+            "type": "blur",
+            "radius": 0
+          },
+          "padding": [
+            48,
+            64
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "hWPuu",
+              "name": "logoBox",
+              "width": 40,
+              "height": 40,
+              "fill": "#0D0D0D",
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "P0VuJ",
+                  "x": 6,
+                  "y": 6,
+                  "name": "logoShape1",
+                  "fill": "#F2F2F2",
+                  "width": 12,
+                  "height": 12
+                },
+                {
+                  "type": "rectangle",
+                  "id": "FaTl9",
+                  "x": 22,
+                  "y": 22,
+                  "name": "logoShape2",
+                  "fill": "#F2F2F2",
+                  "width": 12,
+                  "height": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "D76Fq",
+              "name": "heroCenter",
+              "layout": "vertical",
+              "gap": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "VlnKi",
+                  "name": "heroTitle",
+                  "fill": "#0D0D0D",
+                  "content": "My Portfolio",
+                  "fontFamily": "Inter",
+                  "fontSize": 56,
+                  "fontWeight": "900"
+                },
+                {
+                  "type": "text",
+                  "id": "un3m6",
+                  "name": "heroSub",
+                  "fill": "#0D0D0D",
+                  "content": "Design & development across product and brand",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "300"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "w1wcJ",
+              "name": "spacer",
+              "width": 40,
+              "height": 40
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "vqCCg",
+          "name": "Content Row",
+          "width": "fill_container",
+          "height": 480,
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#0D0D0D"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "id": "ZlJ18",
+              "name": "Left Column",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#FFFFFF",
+              "stroke": {
+                "align": "inside",
+                "thickness": {
+                  "right": 1
+                },
+                "fill": "#0D0D0D"
+              },
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 40,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OazTY",
+                  "name": "leftCat",
+                  "fill": "#0D0D0D",
+                  "content": "WORK",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "fCAgm",
+                  "name": "leftHead",
+                  "fill": "#0D0D0D",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Selected projects from the last five years",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "900"
+                },
+                {
+                  "type": "text",
+                  "id": "PELFu",
+                  "name": "leftBody",
+                  "fill": "#0D0D0D",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "A collection of product design, brand systems, and interactive experiences for clients and side projects.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "300"
+                },
+                {
+                  "type": "frame",
+                  "id": "hodGN",
+                  "name": "leftLink",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XITxb",
+                      "name": "leftLinkText",
+                      "fill": "#0D0D0D",
+                      "content": "View all work",
+                      "fontFamily": "Inter",
+                      "fontSize": 14
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "PSXM9",
+                      "name": "leftArrow",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "arrow-right",
+                      "iconFontFamily": "lucide",
+                      "fill": "#0D0D0D"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "K9hSs",
+              "name": "Center Column",
+              "width": "fill_container",
+              "height": "fill_container",
+              "stroke": {
+                "align": "inside",
+                "thickness": {
+                  "right": 1
+                },
+                "fill": "#0D0D0D"
+              },
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 40,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wcocR",
+                  "name": "centerCat",
+                  "fill": "#0D0D0D",
+                  "content": "Skills",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "HcGIG",
+                  "name": "centerHead",
+                  "fill": "#0D0D0D",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Design & code",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "900"
+                },
+                {
+                  "type": "text",
+                  "id": "DFTsx",
+                  "name": "centerPromo",
+                  "fill": "#0D0D0D",
+                  "content": "Figma, React, and design systems",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "300"
+                },
+                {
+                  "type": "frame",
+                  "id": "83TY4",
+                  "name": "centerIcons",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "6G22l",
+                      "name": "icon1",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 22,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#0D0D0D"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ej2rE",
+                      "name": "icon2",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 22,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#0D0D0D"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "E3IKt",
+                      "name": "icon3",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 22,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#0D0D0D"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "2RPEo",
+                      "name": "icon4",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 22,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#0D0D0D"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NSLda",
+              "name": "Right Column",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "olo75",
+                  "name": "Right Top",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#0D0D0D"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 40,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "H0oCu",
+                      "name": "rightTopCat",
+                      "fill": "#0D0D0D",
+                      "content": "ABOUT",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "9GPsX",
+                      "name": "rightTopHead",
+                      "fill": "#0D0D0D",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Design-led product and brand",
+                      "fontFamily": "Inter",
+                      "fontSize": 28,
+                      "fontWeight": "900"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "cLM5C",
+                  "name": "Right Bottom",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FFFFFF",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 40,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "PJCOu",
+                      "name": "brand1",
+                      "width": 325,
+                      "height": 27,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#000000ff"
+                      },
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "WTiCf",
+                          "fill": "#CCCCCC",
+                          "width": 100,
+                          "height": 24,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#000000ff"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "g6hg8",
+                          "name": "brand1Link",
+                          "gap": 6,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "yrJfQ",
+                              "name": "brand1Text",
+                              "fill": "#0D0D0D",
+                              "content": "View",
+                              "fontFamily": "Inter",
+                              "fontSize": 12
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "OMNr7",
+                              "name": "brand1Arrow",
+                              "width": 14,
+                              "height": 14,
+                              "iconFontName": "arrow-right",
+                              "iconFontFamily": "lucide",
+                              "fill": "#0D0D0D"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "9r5Fk",
+                      "name": "brand1",
+                      "width": 325,
+                      "height": 27,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#000000ff"
+                      },
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "kUHiI",
+                          "fill": "#CCCCCC",
+                          "width": 100,
+                          "height": 24,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#000000ff"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "JQ6MP",
+                          "name": "brand1Link",
+                          "gap": 6,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Ivlbg",
+                              "name": "brand1Text",
+                              "fill": "#0D0D0D",
+                              "content": "View",
+                              "fontFamily": "Inter",
+                              "fontSize": 12
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "44Ntn",
+                              "name": "brand1Arrow",
+                              "width": 14,
+                              "height": 14,
+                              "iconFontName": "arrow-right",
+                              "iconFontFamily": "lucide",
+                              "fill": "#0D0D0D"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "6trMR",
+          "name": "Footer",
+          "width": "fill_container",
+          "height": 56,
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "top": 1
+            },
+            "fill": "#0D0D0D"
+          },
+          "padding": [
+            0,
+            48
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Ulu16",
+              "name": "footerCopyright",
+              "fill": "#0D0D0D",
+              "content": "© 2025",
+              "fontFamily": "Inter",
+              "fontSize": 11
+            },
+            {
+              "type": "frame",
+              "id": "w1dcO",
+              "name": "footerNav",
+              "gap": 32,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Bqtkm",
+                  "name": "footerNav1",
+                  "fill": "#0D0D0D",
+                  "content": "Github",
+                  "fontFamily": "Inter",
+                  "fontSize": 11
+                },
+                {
+                  "type": "text",
+                  "id": "l5ziI",
+                  "name": "footerNav2",
+                  "rotation": -0.013043240286754933,
+                  "fill": "#0D0D0D",
+                  "content": "LinkedIn",
+                  "fontFamily": "Inter",
+                  "fontSize": 11
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NMLnM",
+              "name": "footerPolicy",
+              "gap": 24,
+              "justifyContent": "end",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OnI4N",
+                  "name": "footerPolicy1",
+                  "fill": "#0D0D0D",
+                  "content": "Privacy",
+                  "fontFamily": "Inter",
+                  "fontSize": 11
+                },
+                {
+                  "type": "text",
+                  "id": "bAsJ2",
+                  "name": "footerPolicy2",
+                  "fill": "#0D0D0D",
+                  "content": "Terms",
+                  "fontFamily": "Inter",
+                  "fontSize": 11
+                },
+                {
+                  "type": "text",
+                  "id": "8PfQe",
+                  "name": "footerPolicy3",
+                  "fill": "#0D0D0D",
+                  "content": "Cookies",
+                  "fontFamily": "Inter",
+                  "fontSize": 11
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
