@@ -32,6 +32,9 @@ ENV NODE_ENV=production
 # We copy everything from the builder's .next/standalone directory.
 COPY --from=builder /app/.next/standalone ./
 
+# Standalone does NOT include .next/static — copy it so CSS and client JS are served
+COPY --from=builder /app/.next/static ./.next/static
+
 # If you use the `public` directory, copy it over
 # COPY --from=builder /app/public ./public
 
