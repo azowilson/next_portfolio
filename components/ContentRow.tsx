@@ -23,12 +23,12 @@ export function ContentRow() {
       aria-label="Portfolio sections"
     >
       {/* Left: Work */}
-      <div className="flex-1 flex flex-col justify-between gap-5 bg-white p-8 border-r border-foreground">
+      <div className="flex-1 flex flex-col min-h-0 bg-white p-8 border-r border-foreground">
         <span className={SECTION_LABEL_CLASS}>WORK</span>
-        <h2 className="text-foreground text-[28px] font-black leading-tight max-w-full">
+        <h2 className="text-foreground text-[28px] font-black leading-tight max-w-full mt-1">
           Selected projects from the last five years
         </h2>
-        <p className="text-foreground text-[15px] font-light leading-[1.5] max-w-full">
+        <p className="m-auto text-foreground text-[15px] font-light leading-[1.5] max-w-full">
           A collection of product design, brand systems, and interactive
           experiences for clients and side projects.
         </p>

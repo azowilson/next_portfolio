@@ -13,7 +13,7 @@ export function Hero() {
           Wilson Leung
         </h1>
         <p className="text-foreground text-base font-light">
-          Design & development across product and brand
+          Software Engineer | IT Specialist | Tech Enthusiast
         </p>
       </div>
       <div className="w-10 h-10 flex-shrink-0" aria-hidden />

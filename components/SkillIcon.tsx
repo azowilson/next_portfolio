@@ -1,9 +1,8 @@
 "use client";
 
-import { ReactNode, useState } from "react";
+import type { ReactNode } from "react";
+import { SKILL_ICONS } from "./skillIconsMap";
 
-const SIMPLE_ICONS_CDN = "https://cdn.simpleicons.org";
-const ICON_COLOR = "0D0D0D";
 const DEFAULT_SIZE = 20;
 
 type SkillIconProps = {
@@ -14,17 +13,18 @@ type SkillIconProps = {
   fallbackIcon?: ReactNode;
 };
 
-/** Renders a skill icon from Simple Icons CDN, or a generic fallback when slug is empty. */
+/** Renders a skill icon from react-icons (Simple Icons), or a generic fallback when slug is empty or not in map. */
 export function SkillIcon({
   slug,
   name,
   size = DEFAULT_SIZE,
   className = "",
-  fallbackIcon
+  fallbackIcon,
 }: SkillIconProps) {
-  const[hasError, setHasError] = useState(false);
+  const IconComponent = slug ? SKILL_ICONS[slug] : null;
 
-  if (!slug) {
+  if (!slug || !IconComponent) {
+    if (fallbackIcon) return <>{fallbackIcon}</>;
     return (
       <span
         className={`inline-flex items-center justify-center rounded bg-foreground/10 flex-shrink-0 ${className}`}
@@ -37,24 +37,13 @@ export function SkillIcon({
     );
   }
 
-  if(hasError) {
-    return <>
-      {fallbackIcon}
-    </>
-  }
-  const src = `${SIMPLE_ICONS_CDN}/${slug}/${ICON_COLOR}`;
-
   return (
-    <img
-      src={src}
-      alt=""
-      width={size}
-      height={size}
-      className={`flex-shrink-0 ${className}`}
-      loading="lazy"
+    <IconComponent
+      size={size}
+      className={`flex-shrink-0 text-foreground ${className}`}
       style={{ width: size, height: size }}
       title={name}
-      onError={()=> setHasError(true)}
+      aria-hidden
     />
   );
 }
