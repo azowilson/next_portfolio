@@ -12,4 +12,4 @@ RUN npm install -g pnpm
 
 RUN pnpm install -p
 
-CMD ["pnpm", "build", "&&", "pnpm", "start", "--port=$PORT"]
+CMD ["pnpm", "build", "&&", "pnpm", "start"]
