@@ -17,8 +17,7 @@ COPY . .
 ENV NODE_ENV=production
 # Disable telemetry during the build if desired
 # ENV NEXT_TELEMETRY_DISABLED=1
-
-CMD ["pnpm", "build"]
+RUN npm run build
 
 # ============================================
 # Stage 3: Run the Next.js application
